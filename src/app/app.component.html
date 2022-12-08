@@ -1,25 +1,113 @@
 <div class="main-outer">
-  <div class="top-bar" routerLink="/home">
-    <div class="logo">
-      <img src="../assets/Images/logo.png" alt="logo">
-      <div class="logo-text" routerLink="/home">
-        <p><span>e</span>&nbsp;Education</p>
+  <div class="row" style="margin: 0">
+    <div class="top-bar">
+      <div class="logo" routerLink="/home">
+        <img src="../assets/Images/logo.png" alt="logo">
+        <div class="logo-text" routerLink="/home">
+          <p><span>e</span>&nbsp;Education</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="nav-bar">
-    <div class="contact">
-      <p>Call Us on &nbsp;011 1234567</p>
-    </div>
-    <div class="button-set">
-      <button [ngStyle]="{'text-decoration':(nbtnStyle==true)?'underline':'none'}"(click)="nsubmit()" routerLink="/news">News</button>
-      <button [ngStyle]="{'text-decoration':(ebtnStyle==true)?'underline':'none'}"(click)="esubmit()" routerLink="/events">Events</button>
-      <button [ngStyle]="{'text-decoration':(cbtnStyle==true)?'underline':'none'}"(click)="csubmit()" routerLink="/contact">Contact Us</button>
-      <button [ngStyle]="{'text-decoration':(rbtnStyle==true)?'underline':'none'}"(click)="rsubmit()" routerLink="/register"><mat-icon style="font-size: 16px ">person</mat-icon>Register</button>
-      <button [ngStyle]="{'text-decoration':(sbtnStyle==true)?'underline':'none'}"(click)="ssubmit()" routerLink="/signIn"><mat-icon style="font-size: 16px ">login</mat-icon>Sign In</button>
+  <div class="row">
+    <div class="nav-bar">
+      <div class="row" style="margin: 0">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="contact">
+            <p>Call Us on &nbsp;011 1234567</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="button-set">
+            <button [ngStyle]="{'text-decoration':(nbtnStyle==true)?'underline':'none'}"(click)="nsubmit()" routerLink="/news">News</button>
+            <button [ngStyle]="{'text-decoration':(ebtnStyle==true)?'underline':'none'}"(click)="esubmit()" routerLink="/events">Events</button>
+            <button [ngStyle]="{'text-decoration':(cbtnStyle==true)?'underline':'none'}"(click)="csubmit()" routerLink="/contact">Contact Us</button>
+            <button [ngStyle]="{'text-decoration':(rbtnStyle==true)?'underline':'none'}"(click)="rsubmit()" routerLink="/register"><mat-icon style="font-size: 16px ">person</mat-icon>Register</button>
+            <button [ngStyle]="{'text-decoration':(sbtnStyle==true)?'underline':'none'}"(click)="ssubmit()" routerLink="/signIn"><mat-icon style="font-size: 16px ">login</mat-icon>Sign In</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
 </div>
 <router-outlet></router-outlet>
+<div class="footer">
+  <div class="newsLetter">
+    <div class="row" style="margin: 0">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <p>SUBSCRIBE WEEKLY NEWSLETTER</p>
+      </div>
+      <div class="col-10 col-sm-12 col-md-6 col-lg-6">
+        <div class="emailAndBtn">
+          <input type="email" class="input-wrapper">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  <div class="footer-link-list">
+    <div class="row" >
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+        <div class="det-1">
+          <h4>INFORMATION</h4>
+          <br>
+          <ul>
+            <li><p>About Us</p></li>
+            <li><p>Our Stories</p></li>
+            <li><p>My Account</p></li>
+            <li><p>Our History</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+        <div class="det-1">
+          <h4>STUDENT HELP</h4>
+          <br>
+          <ul>
+            <li><p>About Us</p></li>
+            <li><p>Our Stories</p></li>
+            <li><p>My Account</p></li>
+            <li><p>Our History</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+        <div class="det-1">
+          <h4>INSTAGRAM</h4>
+          <br>
+          <div class="footer-instar-img">
+            <div class="row">
+              <div class="col-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNSK0ndR6NmOEGq91brn0pK8pBHqad1oL7OHtUTmEKVQ&s" alt="">
+              </div>
+              <div class="col-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_3ELUAraSJdzdVvyOYEfK2ow6D0v7vKjCFEfI_9PRxw8rJ76yPpc801zXcENooNy5Pc&usqp=CAU" alt="">
+              </div>
+              <div class="col-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqToI2J0IlRVhnV0EzVFmPHyexatuGzpT9usClaCuYgSLEy9XX1so_QQUXaT2JhKxefZQ&usqp=CAU" alt="">
+              </div>
+              <div class="col-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPac4-4xP3VEwaDSj34OynzG7jCDlhgJQNA_VqVStjZgU-GEuxmZMG2ao9wD8cDRSc6Do&usqp=CAU" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+        <div class="det-1">
+          <h4>CONTACT</h4>
+          <br>
+          <ul>
+            <li><p>About Us</p></li>
+            <li><p>Our Stories</p></li>
+            <li><p>My Account</p></li>
+            <li><p>Our History</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

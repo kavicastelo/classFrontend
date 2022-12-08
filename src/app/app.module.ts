@@ -12,6 +12,12 @@ import { ContactsComponent } from './component/contacts/contacts.component';
 import { EventsComponent } from './component/events/events.component';
 import { NewsComponent } from './component/news/news.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {HttpClientModule} from "@angular/common/http";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -28,7 +34,14 @@ import { NotFoundComponent } from './component/not-found/not-found.component';
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSnackBarModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

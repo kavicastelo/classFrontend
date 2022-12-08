@@ -1,1 +1,29 @@
-<p>signin works!</p>
+<div class="outer">
+  <div class="inner">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="row">
+        <h3>Sign In</h3>
+        <div class="col-12">
+          <mat-form-field class="input-wrapper" appearance="outline">
+            <input formControlName="email" type="email" matInput placeholder="Email">
+          </mat-form-field>
+        </div>
+        <div class="col-12">
+          <mat-form-field class="input-wrapper" appearance="outline">
+            <input formControlName="password" type="password" matInput placeholder="Password">
+          </mat-form-field>
+        </div>
+        <div class="col-12">
+          <button mat-raised-button [ngStyle]="{'background-color':(loginForm.invalid)?'':'#81b441'}" type="submit" [disabled]="loginForm.invalid">Sign In</button>
+        </div>
+        <div class="col-12">
+          <hr>
+          <div class="col-12">
+            <button routerLink="/register" mat-raised-button color="accent">Create an account</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
