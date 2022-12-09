@@ -1,13 +1,13 @@
-.main-outer{
+.main-outer {
   width: 100%;
   min-height: 100vh;
   height: auto;
 }
 
-.carousel-caption{
+.carousel-caption {
   margin-bottom: 200px;
 
-  h5{
+  h5 {
     color: white;
     font-family: "Times New Roman", sans-serif;
     margin: 10px 0;
@@ -15,7 +15,7 @@
     text-shadow: 1px 1px 2px black;
   }
 
-  h2{
+  h2 {
     font-weight: bold;
     color: white;
     font-family: "Times New Roman", sans-serif;
@@ -24,7 +24,7 @@
     text-shadow: 1px 1px 2px black;
   }
 
-  button{
+  button {
     height: 50px;
     background-color: transparent;
     border: 2px solid white;
@@ -32,11 +32,12 @@
     font-weight: bold;
     margin: 10px 0;
   }
-  button:hover{
+
+  button:hover {
     background-color: #e79800;
   }
 
-  p{
+  p {
     color: white;
     font-family: "Times New Roman", sans-serif;
     margin: 10px 0;
@@ -45,19 +46,26 @@
   }
 }
 
-.courses{
-  height: 100px;
+.courses {
+  height: auto;
   margin-top: 30px;
   font-family: "Times New Roman", sans-serif;
 }
 
-.searchCourses{
-  height: 100px;
+.searchCourses {
+  min-height: 100px;
+  height: auto;
   margin-top: 30px;
   font-family: "Times New Roman", sans-serif;
+  background-color: #f8f8f8;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+  .input-wrapper {
+    width: 100%;
+  }
 }
 
-.courseCat{
+.courseCat {
   margin-top: 25px;
   height: 150px;
   background-color: #f8f8f8;
@@ -65,107 +73,221 @@
   display: flex;
   flex: 1;
 
-  .course-icon{
+  .course-icon {
     width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    mat-icon{
+    mat-icon {
       font-size: 40px;
     }
   }
 
-  .course-des{
+  .course-des {
     padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    p{
+    p {
       text-align: justify;
       margin-left: 10px;
     }
   }
 }
-.science{
+
+.science {
   border-right-color: #079D92;
-  mat-icon{
+
+  mat-icon {
     color: #079D92;
   }
 }
-.science:hover{
+
+.science:hover {
   color: white;
   background-color: #24CCC0;
-  mat-icon{
+
+  mat-icon {
     color: white;
   }
 }
-.commerce{
+
+.commerce {
   border-right-color: #FD2A03;
-  mat-icon{
+
+  mat-icon {
     color: #FD2A03;
   }
 }
-.commerce:hover{
+
+.commerce:hover {
   color: white;
   background-color: #FC5F42;
-  mat-icon{
+
+  mat-icon {
     color: white;
   }
 }
-.arts{
+
+.arts {
   border-right-color: #9000AE;
-  mat-icon{
+
+  mat-icon {
     color: #9000AE;
   }
 }
-.arts:hover{
+
+.arts:hover {
   color: white;
   background-color: #AD33C6;
-  mat-icon{
+
+  mat-icon {
     color: white;
   }
 }
-.technology{
+
+.technology {
   border-right-color: #008BE7;
-  mat-icon{
+
+  mat-icon {
     color: #008BE7;
   }
 }
-.technology:hover{
+
+.technology:hover {
   color: white;
   background-color: #45AEF4;
-  mat-icon{
+
+  mat-icon {
     color: white;
   }
 }
-.ols{
+
+.ols {
   border-right-color: #0EB053;
   margin-bottom: 50px;
-  mat-icon{
+
+  mat-icon {
     color: #0EB053;
   }
 }
-.ols:hover{
+
+.ols:hover {
   color: white;
   background-color: #10C45C;
-  mat-icon{
+
+  mat-icon {
     color: white;
   }
 }
-.primary{
+
+.primary {
   border-right-color: #E1A500;
   margin-bottom: 50px;
-  mat-icon{
+
+  mat-icon {
     color: #E1A500;
   }
 }
-.primary:hover{
+
+.primary:hover {
   color: white;
   background-color: #F8C331;
-  mat-icon{
+
+  mat-icon {
     color: white;
+  }
+}
+
+.welcome-div {
+  min-height: 100px;
+  height: auto;
+  width: 100%;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+
+  .welcome-img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .welcome-des {
+    flex: 1;
+  }
+
+  .welcome-title {
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-family: "Times New Roman", sans-serif;
+      font-size: 30px;
+    }
+
+    .ins-materials {
+      width: 100%;
+      min-height: 200px;
+      height: auto;
+      border: 1px solid red;
+
+      .mat {
+        min-height: 100px;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .materials-icons {
+          width: auto;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin-top: 10px;
+          border-radius: 100%;
+          background-color: white;
+          box-shadow: 1px 1px 2px black;
+
+          mat-icon {
+            margin: 25px;
+          }
+        }
+
+        .mat-title{
+          margin-top: 20px;
+          display: inline-block;
+          max-width: 95%;
+          white-space: nowrap;
+          overflow: hidden !important;
+          text-overflow: ellipsis;
+
+          h4{
+            font-size: 18px;
+            font-family: "Times New Roman", sans-serif;
+          }
+        }
+
+        p{
+          text-align: center;
+        }
+        span{
+          margin-top: 10px;
+          font-weight: bolder;
+        }
+
+      }
+    }
   }
 }
