@@ -1,6 +1,171 @@
 .main-outer{
   width: 100%;
+  min-height: 100vh;
   height: auto;
-
 }
 
+.carousel-caption{
+  margin-bottom: 200px;
+
+  h5{
+    color: white;
+    font-family: "Times New Roman", sans-serif;
+    margin: 10px 0;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  h2{
+    font-weight: bold;
+    color: white;
+    font-family: "Times New Roman", sans-serif;
+    margin: 10px 0;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  button{
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  button:hover{
+    background-color: #e79800;
+  }
+
+  p{
+    color: white;
+    font-family: "Times New Roman", sans-serif;
+    margin: 10px 0;
+    font-size: 22px;
+    text-shadow: 1px 1px 2px black;
+  }
+}
+
+.courses{
+  height: 100px;
+  margin-top: 30px;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.searchCourses{
+  height: 100px;
+  margin-top: 30px;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.courseCat{
+  margin-top: 25px;
+  height: 150px;
+  background-color: #f8f8f8;
+  border: 3px solid transparent;
+  display: flex;
+  flex: 1;
+
+  .course-icon{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    mat-icon{
+      font-size: 40px;
+    }
+  }
+
+  .course-des{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p{
+      text-align: justify;
+      margin-left: 10px;
+    }
+  }
+}
+.science{
+  border-right-color: #079D92;
+  mat-icon{
+    color: #079D92;
+  }
+}
+.science:hover{
+  color: white;
+  background-color: #24CCC0;
+  mat-icon{
+    color: white;
+  }
+}
+.commerce{
+  border-right-color: #FD2A03;
+  mat-icon{
+    color: #FD2A03;
+  }
+}
+.commerce:hover{
+  color: white;
+  background-color: #FC5F42;
+  mat-icon{
+    color: white;
+  }
+}
+.arts{
+  border-right-color: #9000AE;
+  mat-icon{
+    color: #9000AE;
+  }
+}
+.arts:hover{
+  color: white;
+  background-color: #AD33C6;
+  mat-icon{
+    color: white;
+  }
+}
+.technology{
+  border-right-color: #008BE7;
+  mat-icon{
+    color: #008BE7;
+  }
+}
+.technology:hover{
+  color: white;
+  background-color: #45AEF4;
+  mat-icon{
+    color: white;
+  }
+}
+.ols{
+  border-right-color: #0EB053;
+  margin-bottom: 50px;
+  mat-icon{
+    color: #0EB053;
+  }
+}
+.ols:hover{
+  color: white;
+  background-color: #10C45C;
+  mat-icon{
+    color: white;
+  }
+}
+.primary{
+  border-right-color: #E1A500;
+  margin-bottom: 50px;
+  mat-icon{
+    color: #E1A500;
+  }
+}
+.primary:hover{
+  color: white;
+  background-color: #F8C331;
+  mat-icon{
+    color: white;
+  }
+}
