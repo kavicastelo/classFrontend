@@ -40,3 +40,23 @@
     }
   }
 }
+
+.left-div{
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  border: 1px solid red;
+  overflow: hidden;
+
+  img{
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.right-div{
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  border: 1px solid red;
+}
