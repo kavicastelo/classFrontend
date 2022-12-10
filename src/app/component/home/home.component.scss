@@ -442,3 +442,17 @@
     }
   }
 }
+
+.faculty-div{
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  overflow-x: hidden;
+
+  .faculty-des{
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    border: 1px solid red;
+  }
+}
