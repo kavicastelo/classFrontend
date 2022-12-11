@@ -1,0 +1,170 @@
+.top-title{
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+
+  .title-img{
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+
+    img{
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .title-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      inset: 0;
+      color: white;
+      padding: 70px;
+      background: rgba(0,0,0,0.5);
+
+      .div-name{
+        font-size: 50px;
+        font-family: "Times New Roman", sans-serif;
+      }
+
+      .div-path{
+        cursor: pointer;
+
+        span:hover{
+          color: #e79800;
+        }
+      }
+    }
+  }
+}
+
+.left-div{
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  overflow: hidden;
+
+  img{
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .event-title{
+    margin-top: 20px;
+
+    h4{
+      font-family: "Times New Roman", sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .venue{
+    width: 60%;
+    height: auto;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    span{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: #7f8c8d;
+
+      mat-icon{
+        color: #e79800;
+      }
+    }
+    span:hover{
+      color: #e79800;
+    }
+  }
+
+  h5{
+    font-family: "Times New Roman", sans-serif;
+    font-weight: normal;
+    color: #262626;
+    margin: 20px 0;
+    font-size: 20px;
+  }
+
+  p{
+    color: #7f8c8d;
+  }
+}
+
+.right-div{
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  background-color: #f8f8f8;
+  padding: 20px;
+
+  h1{
+    font-family: "Times New Roman", sans-serif;
+    font-size: 25px;
+  }
+
+  .input-wrapper{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #7f8c8d;
+    margin: 10px 0;
+  }
+
+  .achieves-list{
+    hr{
+      margin: 0;
+    }
+    span{
+      p{
+        cursor: pointer;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+      };
+      p:hover{
+        color: #e79800;
+        padding-left: 10px;
+        background-color: #f1f1f1;
+      }
+    }
+  }
+
+  .cat-list{
+    span{
+      p{
+        cursor: pointer;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+      }
+      p:hover{
+        background-color: #e79800;
+        color: white;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  button{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #7f8c8d;
+  }
+  button:hover{
+    background-color: #e79800;
+    color: white;
+  }
+}

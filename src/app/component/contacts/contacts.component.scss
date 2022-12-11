@@ -1,23 +1,31 @@
-.title-left{
-  margin-top: 20px;
-  font-size: 22px;
-  font-weight: bold;
-}
-.sr-only{
-  margin-top: 10px;
-}
-.more-info{
-  margin-top: 10px;
-
-  ul>li{
-    margin-top: 10px;
-    list-style: none;
-    font-size: 18px;
-  }
-}
-.btn{
-  margin-top: 10px;
-}
 .box-shadow-full{
   margin: 20px 0;
+
+  .title-left{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .form-group{
+    .sr-only{
+      margin-top: 10px;
+    }
+    .form-control{
+      margin: 20px 0;
+    }
+  }
+
+  .more-info{
+    margin-top: 10px;
+
+    ul>li{
+      margin-top: 10px;
+      list-style: none;
+      font-size: 18px;
+    }
+  }
+  .btn{
+    margin-top: 10px;
+  }
 }

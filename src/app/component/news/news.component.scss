@@ -148,7 +148,6 @@
   height: auto;
   background-color: #f8f8f8;
   padding: 20px;
-  border: 1px solid red;
 
   h1{
     font-family: "Times New Roman", sans-serif;
@@ -200,5 +199,15 @@
         padding-left: 10px;
       }
     }
+  }
+
+  button{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #7f8c8d;
+  }
+  button:hover{
+    background-color: #e79800;
+    color: white;
   }
 }
